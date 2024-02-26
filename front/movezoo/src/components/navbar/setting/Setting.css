@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.setting {
+  @apply w-full h-full
+}
+
+.setting-button-container {
+  @apply w-full h-full flex justify-center items-center
+}
+
+.setting-button-container:hover .settingButton {
+  @apply scale-150;
+}
+
+.settingButton {
+  @apply w-10 h-10 transition;
+}
+
+.setting-container {
+  @apply flex flex-col
+}
+
+.setting-header {
+  @apply flex flex-row justify-between items-center;
+}
+
+.setting-header-name {
+  @apply flex text-2xl items-center font-semibold mx-auto
+}
+
+.setting-body {
+  @apply flex flex-col items-center justify-center
+}
+
+.setting-sound {
+  @apply flex flex-row items-center mt-5
+}
+
+.sound-image {
+  @apply mr-5
+}

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back-link {
+  @apply w-[250px] h-[80px] flex flex-1 justify-center items-center 
+  text-lg bg-green-400 rounded-xl transition 
+  hover:text-red-100 hover:bg-red-500 active:text-red-900 hover:cursor-pointer 
+}
+
+.back-link:hover .back-name {
+  @apply scale-150;
+}
+
+.back-name {
+  @apply transition
+}
+

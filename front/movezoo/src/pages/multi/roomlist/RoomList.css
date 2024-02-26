@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roomlist-container {
+  background-image: url('/public/images/mainbg/mainbg.png');
+  background-size: cover;
+  @apply min-w-[1200px] min-h-screen flex flex-col justify-center items-center
+  bg-green-400 cursor-default;
+}
+
+.roomlist-table::-webkit-scrollbar {
+  display: none;
+}
+
+/* 룸 리스트 헤더 */
+.roomlist-header {
+  @apply w-[1000px] flex justify-start items-start p-5
+}
+
+.roomlist-header-name {
+  @apply text-8xl text-white justify-start items-start
+}
+
+
+/* 룸 리스트 바디 */
+.roomlist-body {
+  background-color: rgba(247, 254, 231, 0.6);
+  @apply w-[1000px] min-w-[1000px] flex flex-col
+  rounded-3xl mb-10;
+  padding: 5px;
+}
+
+.roomlist-info {
+  @apply flex items-center justify-between mt-8 ml-8 mr-8 mb-4;
+}
+
+.roomlist-info-choose {
+  @apply flex flex-row items-center
+}
+
+.roomlist-search{
+  @apply mr-4
+}
+
+.roomlist-search-input {
+  @apply w-80 h-10 rounded-lg outline-none
+}
+
+/* .roomlist-search-input:focus {
+  @apply  border-green-600
+} */
+
+.roomlist-search-input::placeholder {
+  @apply pl-5 text-gray-300 text-xl
+}
+
+.roomlist-search-button {
+  @apply w-20 h-10 mr-5 flex items-center justify-center rounded-lg
+  bg-red-500 text-white
+  hover:scale-110 hover:bg-red-700 transition duration-300 active:bg-gray-800 cursor-pointer
+}
+
+.roomlist-reload {
+  @apply w-10 mr-24
+}
+
+.roomlist-reload-button {
+  @apply w-7 transition duration-300 transform hover:rotate-180;
+}
+
+.roomlist-match{
+  @apply w-[120px] h-12 flex items-center justify-center rounded-lg ml-24 mr-4 bg-green-500 text-white
+  text-xl
+  hover:scale-110 transition duration-300 hover:bg-green-600 cursor-pointer
+}
+
+
+
+.roomlist-make{
+  @apply w-[120px] h-12 flex items-center justify-center rounded-lg mr-4 bg-green-500 text-white
+  text-xl
+  hover:scale-110 transition duration-300 hover:bg-green-600 cursor-pointer
+}
+
+.roomlist-table{
+  @apply h-[400px] flex flex-wrap justify-stretch overflow-y-scroll ml-4
+}
+
+.roomlist-table-box {
+  @apply w-[288px] h-[164px] m-4
+  hover:scale-105 transition duration-300
+}
+
+/* 메인 네브바 */
+.room-navbar {
+  @apply w-4/6 h-36 flex justify-center items-center;
+}

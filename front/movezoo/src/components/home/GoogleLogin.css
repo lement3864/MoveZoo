@@ -1,0 +1,21 @@
+.googlelogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%, 0.9);
+  border-radius: 10px;
+  @apply
+  h-12
+  mb-4;
+}
+
+.googleLogo {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  content: url('/public/images/homebg/googlelogo.png');
+}
+
+.googlelogin:hover {
+  border: 5px red double ;
+}

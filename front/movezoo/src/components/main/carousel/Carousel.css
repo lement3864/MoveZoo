@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-container {
+  @apply  select-none flex flex-row justify-center items-center w-full
+}
+
+.carousel-prev {
+  @apply flex items-center justify-start 
+}
+
+.prevButton {
+  @apply w-28 h-28 text-white hover:text-gray-300 active:scale-90
+  hover:cursor-pointer hover:scale-110 transition-all duration-200 mt-40
+}
+
+.carousel-image {
+  @apply h-full flex justify-center items-center mt-10
+}
+
+.carousel-choose-image {
+  @apply h-[500px]
+}
+
+.slide-right-enter {
+  @apply transform translate-x-1/4;
+}
+
+.slide-right-enter-active {
+  @apply transform translate-x-0 transition-transform duration-300;
+}
+
+.slide-right-exit {
+  @apply transform translate-x-0;
+}
+
+.slide-right-exit-active {
+  @apply transform -translate-x-1/4 transition-transform duration-300;
+}
+
+.slide-left-enter {
+  @apply transform -translate-x-1/4;
+}
+
+.slide-left-enter-active {
+  @apply transform translate-x-0 transition-transform duration-300;
+}
+
+.slide-left-exit {
+  @apply transform translate-x-0;
+}
+
+.slide-left-exit-active {
+  @apply transform translate-x-1/4 transition-transform duration-300;
+}
+
+.carousel-next {
+  @apply flex items-center justify-end
+}
+
+.nextButton {
+  @apply w-28 h-28 text-white hover:text-gray-300 active:scale-90
+  hover:cursor-pointer hover:scale-110 transition-all duration-200 mt-40
+}

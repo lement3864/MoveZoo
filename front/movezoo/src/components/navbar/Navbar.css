@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-container {
+  @apply flex justify-around items-center text-white; 
+}
+
+.navbar-shop, .navbar-ranking, .navbar-single, .navbar-multi, .navbar-friend, .navbar-setting {
+  @apply w-[80px] h-[80px] flex flex-1 justify-center items-center text-lg
+   m-2
+  hover:text-gray-200 hover:cursor-pointer 
+}
+
+.navbar-single:hover .single {
+  @apply scale-150;
+}
+
+.single {
+  @apply transition
+}
+
+.navbar-multi:hover .multi {
+  @apply scale-150;
+}
+
+.multi {
+  @apply transition
+}

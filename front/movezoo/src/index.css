@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.exit-button {
+  @apply w-10 h-10 hover:text-gray-500 hover:scale-125 transition;
+}
+
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url(./fonts/Pretendard-Black.otf);
+}
+
+body {
+  font-family: 'Pretendard-Black', sans-serif;
+  user-select: none;
+}

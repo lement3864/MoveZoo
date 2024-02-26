@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shop {
+  @apply w-full h-full
+}
+
+.shop-button-container {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+.shop-button-container:hover .shopButton {
+  @apply scale-150;
+}
+
+.shopButton {
+  @apply transition w-10 h-10
+}
+
+.shop-container {
+  @apply flex flex-row ;
+}
+
+/* .shop-header {
+  @apply flex flex-row justify-between items-center;
+}
+
+.shop-header-name {
+  @apply flex text-4xl items-center mx-auto
+} */
+
+.shop-exit {
+  @apply flex justify-end
+}

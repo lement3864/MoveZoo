@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logininput {
+  border-radius: 10px;
+  background-color: hsl(36, 100%, 90%, 0.8);
+  @apply
+  w-full
+  mb-1
+  pl-3
+  h-12
+  mb-4
+}
+
+.logininput::placeholder {
+  color:white;
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-style: italic;
+}
+
+.loginbt {
+  margin-top: 5px;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  font-family: 'DNFBitBitv2';
+  background-color: rgb(34, 197, 94);
+  user-select: none;
+  @apply
+  bg-green-500
+  h-12
+  mb-4;
+}
+
+.loginbt:hover {
+  background-color: blue;
+  transition: 0.5s;
+}

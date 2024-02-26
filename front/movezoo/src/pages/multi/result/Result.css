@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.multi-result-container {
+  background-image:url('/public/images/mainbg/mainbg.png');
+  background-size: cover;
+  @apply min-w-[1000px] min-h-screen flex flex-col justify-center items-center
+  bg-green-400 cursor-default;
+}
+
+.multi-result-header {
+  @apply  w-[1000px] flex justify-start items-start p-5
+}
+
+.multi-result-name {
+  @apply text-7xl text-white justify-start items-start
+}
+
+.multi-result-body-card {
+  background-color: rgba(247, 254, 231, 0.6);
+  @apply w-[1000px] min-w-[1000px] flex flex-col
+  rounded-3xl mb-10;
+}
+
+.multi-result-body {
+  @apply flex flex-row justify-between m-5
+}
+
+.multi-result-leftSection {
+  @apply w-full flex flex-col items-center justify-center  ;
+}
+
+.multi-result-CamSection {
+  @apply w-full h-[450px] relative flex flex-col items-end;
+}
+
+.multi-result-webCam-1st {
+  @apply w-[170px] h-auto absolute top-1/2 right-1/2 flex flex-col items-center justify-center
+  rounded-lg bg-white overflow-hidden scale-[3] transform -translate-y-1/2 border-4 border-yellow-400;
+}
+
+.multi-result-webCam-else {
+  @apply w-[170px] h-auto min-h-[140px] relative flex flex-col items-center justify-between
+  rounded-3xl bg-white overflow-hidden;
+}
+
+.multi-result-winner-img {
+  @apply absolute w-1/3 top-0 left-[45%] z-10
+}
+
+.multi-result-webCam-box-1st {
+  @apply relative w-full h-auto scale-150 rounded-3xl
+}
+
+.multi-result-webCam-box-else {
+  @apply relative w-full h-auto rounded-3xl
+}
+
+.multi-result-webCam-img {
+  @apply relative w-full h-full rounded-3xl bg-black
+}
+
+.multi-result-bottomCamSection {
+  @apply flex flex-row
+}
+
+.multi-result-rightSection {
+  @apply w-1/4 h-[450px] flex flex-col items-end justify-between ml-10
+}
+
+.multi-result-reward {
+  @apply w-[250px] h-[300px] p-5 flex flex-col items-center justify-center 
+  bg-white rounded-3xl
+}
+
+.multi-result-backbutton {
+}
+
+.multi-result-reward {
+  @apply flex flex-col items-center
+}
+
+.multi-result-reward-info {
+  border-bottom: solid black 1px;
+  @apply w-full h-[50px] flex
+}
+
+.multi-result-reward-recode {
+  @apply w-full h-[250px] flex flex-col justify-center items-center
+}
+
+.multi-result-reward-user {
+  @apply w-full h-[50px] flex justify-center items-center mt-1 mb-1
+}
+
+.multi-result-reward-rank {
+  @apply w-1/4 flex justify-center items-center
+}
+
+.multi-result-reward-section {
+  @apply w-1/2 flex flex-col justify-center items-center
+}
+
+.multi-result-reward-coin {
+  @apply w-1/4 flex justify-center items-center
+}
+
+.multi-result-reward-table {
+  @apply w-full flex flex-col items-center justify-center
+}
+
+.multi-result-reward-thead {
+  @apply w-full mb-4 justify-between items-center
+}
+
+.multi-result-reward-theadTr {
+  @apply flex justify-between items-center
+}
+
+.multi-result-reward-tbody {
+  @apply w-full justify-center items-center
+}
+
+.multi-result-reward-tbodyTr {
+  @apply flex justify-between items-center
+}

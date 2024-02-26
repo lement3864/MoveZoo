@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.single-container {
+  background-image: url('/public/images/mainbg/mainbg.png');
+  background-size: cover;
+  user-select: none;
+  @apply min-w-[1200px] min-h-screen flex flex-col justify-center items-center
+  bg-green-400 cursor-default;
+}
+
+.Back {
+  @apply flex flex-row items-center absolute bottom-10 left-10
+  text-white text-2xl
+  hover:scale-125 hover:text-gray-300 transition;
+}
+
+.single-header {
+  @apply w-[900px] flex justify-start items-start p-5
+}
+
+.single-name {
+  @apply text-7xl text-white justify-start items-start
+}
+
+.single-body-card {
+  background-color: rgba(247, 254, 231, 0.6);
+  @apply w-[900px] min-w-[900px] flex flex-col
+  rounded-3xl mb-10;
+}
+
+.single-back-button{
+  @apply flex justify-end items-end
+}
+
+.single-body {
+  @apply flex flex-row justify-between m-10
+}
+
+.single-body-cam {
+  @apply w-full flex items-center justify-center ;
+}
+
+.single-body-webCam {
+  @apply w-full flex items-center justify-center
+  rounded-3xl;
+}
+
+.body-selects {
+  @apply w-[400px] flex flex-col items-end justify-between ml-10
+}
+
+.map-select {
+
+}
+
+.charact-select {
+  @apply w-[228px] h-[84px] flex justify-center items-center 
+  bg-lime-50 rounded-2xl
+}
+
+
+.charact-select-button {
+  @apply text-2xl
+}
+
+.start-select {
+
+}
+

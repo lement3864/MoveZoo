@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.NicknameChange-container {
+  
+}
+
+.nicknamechange-header {
+  @apply flex flex-row p-4;
+}
+
+.nicknamechange-body {
+  @apply flex flex-col p-4;
+}
+
+.nicknamechange-body-name {
+  @apply text-2xl mb-2;
+}
+
+.nickname-change {
+  @apply flex pb-2;
+}
+
+.nickname-input {
+  @apply w-56 border-2 border-green-400 rounded-md outline-none
+
+}
+
+.nickname-input:focus {
+  @apply  border-green-600
+}
+
+.nickname-change-button {
+  @apply flex justify-end mt-2
+}
+
+.change-button {
+  @apply flex flex-col h-8 items-center justify-center p-2 bg-green-400 rounded-md text-white
+  hover:bg-green-600 hover:scale-125 transition duration-300;
+}
+
+.nicknameconfirm-header{
+  @apply flex flex-1 justify-center pt-4 items-center text-lg font-semibold
+}
+
+.nicknameconfirm-body {
+  @apply flex flex-col items-center p-4;
+}
+
+.Nicknameconfirm-container {
+  @apply flex flex-col items-center mt-10;
+}
